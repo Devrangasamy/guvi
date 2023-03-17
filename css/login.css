@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url('../assets/img1.avif');
+    min-height: 100vh;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.login-container{
+    background-color: #ffffff;
+    color: #ff9f1c;
+    min-height: 30%;
+    max-width: 40%;
+    margin: auto auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(10,10,10,0.1);
+    opacity: 0.9;
+}
+.login-container:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.form-element{
+    margin: 18px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    color: rgb(48, 31, 11);
+    font-size: 20px;
+}
+input{
+    margin: 10px;
+    border: none;
+    color: #ff9f1c;
+    width: 100%;
+    background-color:#cbf3f0;
+    padding: 8px;
+    border-radius: 20px;
+}
+input:hover{
+    box-shadow: 1px 1px 1px 1px rgba(10,10,10,0.1);
+    border-color: #cbf3f0;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button{
+    border: none;
+    text-decoration: none;
+    color: #504949;
+    background-color:#cbf3f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto auto;
+    font-size: 20px;
+        display: grid;
+    grid-template-rows: 1fr;
+}
+a{
+    text-decoration: none;
+    color: #504949;
+}
+button:hover{
+    box-shadow: 1px 1px 1px 1px rgba(10,10,10,0.1);
+    border-color: #cbf3f0;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+    .form-element{
+        margin: 18px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        align-items: center;
+        color: rgb(48, 31, 11);
+        font-size: 20px;
+        transition: 1s;
+    }
+    .form-element{
+        text-align: center;
+        transition: 1s;
+    }
+    input{
+        margin: 10px 10px 10px 0px;
+        transition: 1s;
+    }
+    .button{
+        transition: 1s;
+        margin: 18px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+  }

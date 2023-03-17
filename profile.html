@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/profile.js" defer></script>
+    <link rel="stylesheet" href="./css/profile.css" >
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-img"><img src="./assets/img1.avif" alt="img" width="80px" height="80px"></img></div>
+      <div class="heading">PROFILE</div>
+      <div id="loading-message"><p>Loading....</p></div>
+
+    <!-- view mode -->
+    <div class="profile-container">
+      <p><strong>Name:</strong></p>
+      <p><strong>Email:</strong></p>
+      <p><strong>DOB:</strong> john@example.com</p>
+      <p><strong>AGE:</strong> 555-1234</p>
+      <p><strong>CONTACT:</strong> 555-1234</p>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <!-- edit mode -->
+    <div class="container">
+    <div class="profile-container">
+    <div class="edit-mode" style="display: none">
+      <div class="form-element">
+      <label for="name-input"><strong>NAME:</strong></label>
+      <input type="text" id="name-input" disabled />
+      </div>
+      <div class="form-element">
+      <label for="email-input"><strong>Email:</strong></label>
+      <input type="text" id="email-input" disabled />
+    </div>
+      <div class="form-element">
+      <label for="dob-input"><strong>DOB:</strong></label>
+      <input type="text" id="dob-input" />
+    </div>
+      <div class="form-element">
+      <label for="age-input"><strong>AGE:</strong></label>
+      <input type="text" id="age-input" />
+    </div>
+      <div class="form-element">
+      <label for="contact-input"><strong>CONTACT:</strong></label>
+      <input type="text" id="contact-input" />
+    </div>
+      <div class="button">
+      <button class="save-btn">Save</button>
+      <button class="cancel-btn">Cancel</button>
+    </div>
+    </div>
+    <div class="button">
+    <button class="logout-button" id="logout-button">Logout</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>
